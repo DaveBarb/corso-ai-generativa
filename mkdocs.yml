@@ -8,14 +8,14 @@ theme:
   language: it
   palette:
     - scheme: default
-      primary: deep purple
-      accent: purple
+      primary: deep orange
+      accent: orange
       toggle:
         icon: material/brightness-7
         name: Passa al tema scuro
     - scheme: slate
-      primary: deep purple
-      accent: purple
+      primary: deep orange
+      accent: orange
       toggle:
         icon: material/brightness-4
         name: Passa al tema chiaro
