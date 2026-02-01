@@ -1,0 +1,97 @@
+site_name: "Corso AI Generativa"
+site_description: "Corso pratico di AI Generativa con Claude - 40 ore"
+site_author: "ITS Steve Jobs"
+site_url: ""
+
+theme:
+  name: material
+  language: it
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Passa al tema scuro
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Passa al tema chiaro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.expand
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Libro:
+    - Introduzione: libro/index.md
+    - Giorno 1 - Intro AI Generativa:
+      - libro/giorno-01/index.md
+      - libro/giorno-01/pratica.md
+    - Giorno 2 - Prompt Engineering:
+      - libro/giorno-02/index.md
+      - libro/giorno-02/pratica.md
+    - Giorno 3 - API Claude:
+      - libro/giorno-03/index.md
+      - libro/giorno-03/pratica.md
+    - Giorno 4 - Claude Code:
+      - libro/giorno-04/index.md
+      - libro/giorno-04/pratica.md
+    - Giorno 5 - Multimodalità:
+      - libro/giorno-05/index.md
+      - libro/giorno-05/pratica.md
+    - Giorno 6 - Avanzato ed Etica:
+      - libro/giorno-06/index.md
+      - libro/giorno-06/pratica.md
+    - Giorno 7 - Ripasso e Progetti:
+      - libro/giorno-07/index.md
+      - libro/giorno-07/pratica.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      lang: it
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css: []
+
+extra:
+  social: []
